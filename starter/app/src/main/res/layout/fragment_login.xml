@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         >
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/emailTextView"
-            style="@style/textview_style"
+            style="@style/myTextViewStyle"
             android:layout_margin="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/email_label"
@@ -36,14 +40,13 @@
             app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
 
         <TextView
-
+            style="@style/myTextViewStyle"
             android:id="@+id/passwordTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_marginStart="16dp"
             android:text="@string/password_label"
-            android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userEmailEditText" />
 
